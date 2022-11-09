@@ -1,0 +1,120 @@
+/* Ukuran tablet */
+@media screen and (max-width : 992px) {
+    .hero{
+        height : 100vh;
+        min-width: 100vh;
+    }
+    nav ul {
+        width: 35%;
+    }
+
+    .katalog-item {
+        flex: 0 30%;
+        margin-bottom: 20px;
+    }
+
+    .katalog-header{
+        display: block;
+      }
+
+    .katalog-detail .katalog-header .katalog-img img{
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+    }
+}
+
+@media screen and (max-width : 800px){
+    .katalog-item {
+        flex: 0 45%;
+        margin-bottom: 20px;
+    }
+    .katalog-detail .katalog-header .katalog-img img{
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+    }
+}
+
+/* Ukuran mobile */
+
+@media screen and (max-width : 600px) {
+    .hero{
+        height:100vh;
+        min-width: 100%;
+    }
+
+    .hero-title{
+        font-size: 25px;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .logo h2{
+        font-size: 18px;
+    }
+
+    nav ul {
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 100vh;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgba(12, 12, 12, 0.97);
+        transform: translateX(100%);
+        transition: all 1s;
+        opacity: 0;
+    }
+
+    nav ul.slide {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    main {
+        padding: 30px;
+    }
+
+    katalog-list {
+        display: block;
+    }
+
+    .katalog-item {
+        flex: 0 45%;
+        margin-bottom: 20px;
+    }
+
+    katalog-item {
+        margin: 20px;
+    }
+
+    .card .katalog-description {
+        display: none;
+    }
+    
+    .katalog-detail{
+        display: block;
+        width: 100%;
+    }
+
+    .katalog-detail .katalog-menus{
+        display: flex;
+        justify-content: space-between;
+      }
+      
+
+    .katalog-detail .katalog-header .katalog-img img{
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+    }
+
+    .card-review{
+        width: 300px;
+    }
+
+}
