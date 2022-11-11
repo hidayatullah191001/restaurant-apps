@@ -5,6 +5,7 @@ import LikeButtonInitiator from '../../utils/like-button-initiator';
 import '../components/ReviewList';
 import '../components/CategoriesList';
 import '../components/MenusList';
+import FavoriteRestaurantIdb from '../../data/favorite-restaurant-idb';
 
 const Detail = {
   async render() {
@@ -46,6 +47,7 @@ const Detail = {
 
     LikeButtonInitiator.init({
       likeButtonContainer: document.querySelector('#likeButtonContainer'),
+      favoriteRestaurant : FavoriteRestaurantIdb,
       restaurant: {
         id: resto.id,
         name: resto.name,
