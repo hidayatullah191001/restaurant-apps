@@ -1,8 +1,7 @@
 import CONFIG from '../../globals/config';
-
 const createRestaurantItem = (restaurant) => `
     <div class="card katalog-item" tabindex="0">
-        <img src="${CONFIG.BASE_IMAGE_URL + restaurant.pictureId}" alt="${restaurant.name}" style="width:100%; ">
+        <img class="lazyload" src="${CONFIG.BASE_IMAGE_URL + restaurant.pictureId}" alt="${restaurant.name}">
         <p class="katalog-rating"><b>${restaurant.rating}</b></p>
         <div aria-label="Resto ${restaurant.name}" class="container">
           <center>
@@ -55,13 +54,13 @@ function createRestaurantDetailItem(restaurant) {
 
 const createLikeButtonTemplate = () => `
   <button aria-label="like this restaurant" id="likeButton" class="like">
-     <i style="color:white" class="fa fa-heart-o" aria-hidden="true"></i>
+     <small>Add</small>
   </button>
 `;
 
 const createLikedButtonTemplate = () => `
   <button aria-label="unlike this restaurant" id="likeButton" class="like">
-    <i class="fa fa-heart" aria-hidden="true"></i>
+    <small>Remove</small>
   </button>
 `;
 

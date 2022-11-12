@@ -1,5 +1,10 @@
 import RestaurantSource from '../../data/restaurant-source';
 import { createRestaurantItem } from '../templates/template-creator';
+import 'lazysizes';
+import 'lazysizes/plugins/parent-fit/ls.parent-fit';
+ 
+const START = 5;
+const NUMBER_OF_IMAGES = 100;
 
 const Home = {
   async render() {
