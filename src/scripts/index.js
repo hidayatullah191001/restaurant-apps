@@ -3,7 +3,7 @@ import 'regenerator-runtime'; /* for async await transpile */
 import '../styles/main.css';
 import '../styles/responsive.css';
 import '../styles/skip-link.css';
-import 'font-awesome/css/font-awesome.css';
+// import 'font-awesome/css/font-awesome.css';
 import './slide.js';
 
 import swRegister from './utils/sw-register';

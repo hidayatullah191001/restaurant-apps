@@ -39,5 +39,4 @@ describe('Unliking A Restaurant', () => {
     document.querySelector('[aria-label="unlike this restaurant"]').dispatchEvent(new Event('click'));
     expect(await FavoriteRestaurantIdb.getAllRestaurant()).toEqual([]);
   });
-
-})
+});
