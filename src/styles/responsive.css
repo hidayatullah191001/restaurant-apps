@@ -1,8 +1,5 @@
 /* Ukuran tablet */
 @media screen and (max-width : 992px) {
-    .hero{
-        min-width: 100vw;
-    }
     nav ul {
         width: 35%;
     }
@@ -39,12 +36,16 @@
 
 @media screen and (max-width : 600px) {
     .hero img{
-        height : 100vh;
-        min-width: 100vw;
+        width: 100%;
+    }
+
+    .hero-text{
+        position: absolute;
+        top: 25%;
     }
 
     .hero-title{
-        font-size: 20px;
+        font-size: 18px;
     }
 
     .menu-toggle {
