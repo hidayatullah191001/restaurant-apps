@@ -1,7 +1,14 @@
 import CONFIG from '../../globals/config';
+import 'lazysizes';
+import 'lazysizes/plugins/parent-fit/ls.parent-fit';
+
+// eslint-disable-next-line no-unused-vars
+const START = 5;
+// eslint-disable-next-line no-unused-vars
+const NUMBER_OF_IMAGES = 10;
 const createRestaurantItem = (restaurant) => `
     <div class="card katalog-item" tabindex="0">
-        <img class="lazyload" src="${CONFIG.BASE_IMAGE_URL + restaurant.pictureId}" alt="${restaurant.name}">
+        <img class="lazyload" data-src="${CONFIG.BASE_IMAGE_URL + restaurant.pictureId}" alt="${restaurant.name}">
         <p class="katalog-rating"><b>${restaurant.rating}</b></p>
         <div aria-label="Resto ${restaurant.name}" class="container">
           <center>

@@ -6,7 +6,7 @@ class FavoriteRestaurantSearchView {
       <div>
         <center>
           <h1>Favorite List of Restaurant's</h1>
-          <input id="query" type="text">
+          <input id="query" type="text" placeholder="Please entry keyword...">
           </center>
         <br>
         <div id="restaurant" class="katalog-list"></div>
